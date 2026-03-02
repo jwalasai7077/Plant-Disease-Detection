@@ -62,9 +62,15 @@ dataset/
 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
+# HTTPS
+git clone https://github.com/jwalasai7077/Plant-Disease-Detection.git
+
+# or SSH
+git clone git@github.com:jwalasai7077/Plant-Disease-Detection.git
+
 cd Plant-Disease-Detection
 ```
+ Repository URL: https://github.com/jwalasai7077/Plant-Disease-Detection
 
 2. Create and activate a virtual environment (recommended):
 
