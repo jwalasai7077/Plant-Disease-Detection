@@ -1,4 +1,4 @@
-#  Plant Disease Detection
+#  🌱 Plant Disease Detection
 
 An AI-powered plant leaf disease classification project using **TensorFlow + MobileNetV2 (Transfer Learning)**.  
 This repository includes:
@@ -45,7 +45,7 @@ dataset/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python 3.9+
 - TensorFlow / Keras
@@ -57,34 +57,29 @@ dataset/
 
 ---
 
+##  Screenshots
+
+###  Prediction Result
+![Prediction Result](images/prediction.jpeg)
+
+###  Prediction Graph
+![Prediction Graph](images/prediction_graph.jpeg)
+
+###  Training History
+![Training History](images/prediction_history.jpeg)
+
+
 ##  Installation
 
-1. Clone the repository:
+ lone the repository:
 
 ```bash
 # HTTPS
 git clone https://github.com/jwalasai7077/Plant-Disease-Detection.git
 
-# or SSH
-git clone git@github.com:jwalasai7077/Plant-Disease-Detection.git
-
 cd Plant-Disease-Detection
 ```
  Repository URL: https://github.com/jwalasai7077/Plant-Disease-Detection
-
-2. Create and activate a virtual environment (recommended):
-
-```bash
-python -m venv .venv
-source .venv/bin/activate      # Linux/macOS
-# .venv\Scripts\activate       # Windows PowerShell
-```
-
-3. Install dependencies:
-
-```bash
-pip install tensorflow streamlit numpy pillow pandas reportlab
-```
 
 ---
 
@@ -107,21 +102,6 @@ What this does:
 
 ---
 
-##  Local Prediction (CLI)
-
-Use `predict.py` for a quick single-image prediction.
-
-```bash
-python predict.py
-```
-
-By default, it predicts on:
-- `test.jpg`
-
-If needed, edit `img_path` in `predict.py` to test another image.
-
----
-
 ##  Run the Web App
 
 Start the Streamlit app:
@@ -141,28 +121,6 @@ Then open the local URL shown in terminal (typically `http://localhost:8501`).
 
 ---
 
-##  Project Structure
-
-```text
-Plant-Disease-Detection/
-├── app.py                  # Streamlit web app
-├── train.py                # Model training script
-├── predict.py              # CLI prediction script
-├── README.md
-├── test.jpg                # Sample test image
-├── plant_disease_model.h5  # Generated after training
-└── class_names.json        # Generated after training
-```
-
----
-
-##  Notes
-
-- Ensure the dataset folder is correctly named `dataset` and is in the project root.
-- `predict.py` currently reads class names from `dataset/` folder names; for strict consistency with training output, you may prefer to load `class_names.json` there as well.
-- First-time training may download pretrained MobileNetV2 weights from the internet.
-
----
 
 ##  Acknowledgment
 
